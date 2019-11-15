@@ -23,6 +23,7 @@ jobs:
         npm run build --if-present
         npm test
     - name: Deploy to Heroku
+      uses: Rajat117/todo-backend@master
       env:
         HEROKU_API_TOKEN: ${{ secrets.HEROKU_TOKEN }}
         HEROKU_APP_NAME: "todo0101"
