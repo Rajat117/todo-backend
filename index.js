@@ -41,7 +41,6 @@ server.listen(port, function() {
  */
 
 function normalizePort(val) {
-  console.log(val);
   let port = parseInt(val, 10);
 
   if (isNaN(port)) {
